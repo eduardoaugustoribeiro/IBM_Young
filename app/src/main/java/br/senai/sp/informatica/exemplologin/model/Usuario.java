@@ -1,5 +1,6 @@
 package br.senai.sp.informatica.exemplologin.model;
 
+
 public class Usuario {
     private String login;
     private String senha;

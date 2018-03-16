@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="br.senai.sp.informatica.exemplologin.TarefaActivity"
+    tools:context="br.senai.sp.informatica.exemplologin.view.TarefaActivity"
     tools:showIn="@layout/activity_tarefa"
     >
     <LinearLayout
@@ -15,71 +15,71 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_marginTop="32dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
             android:text="Missão 1"
             android:textAllCaps="true"
             android:textColor="@color/colorAccent"
-            android:textStyle="bold"
             android:textSize="25sp"
-            android:gravity="center"/>
+            android:textStyle="bold"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            android:gravity="center"
             android:text="Desenvolvimento de Logotipo"
-            android:gravity="center"/>
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <TextView
 
             android:layout_width="match_parent"
-            android:layout_marginRight="16dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
             android:text="Pensar em um novo conceito visual para o Programa Jovem Aprendiz da IBM, planejar cores,
         foramas e aspecto visual. Podem contar com o auxilio da equipe de desing que
         está à disposição para ajuda-los."
-            android:gravity="center"
-            android:layout_marginLeft="16dp"
 
             />
 
         <CheckBox
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
             android:text="Ler briefing"/>
 
         <CheckBox
-            android:layout_marginLeft="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:text="Fazer pesquisas"/>
 
         <CheckBox
-            android:layout_marginLeft="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:text="Fazer brainstorming"/>
 
         <CheckBox
-            android:layout_marginLeft="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:text="Fazer Testes"/>
 
         <TextView
-            android:layout_marginTop="32dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Comentário"
             android:layout_marginLeft="16dp"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:layout_marginTop="32dp"
+            android:text="Comentário"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <Button
             android:layout_width="match_parent"

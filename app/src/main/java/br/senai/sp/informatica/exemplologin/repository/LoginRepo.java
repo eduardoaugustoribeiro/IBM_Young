@@ -5,9 +5,9 @@ import android.preference.PreferenceManager;
 
 import br.senai.sp.informatica.exemplologin.Main;
 import br.senai.sp.informatica.exemplologin.config.RetrofitConfig;
+import br.senai.sp.informatica.exemplologin.model.Autorizacao;
 import br.senai.sp.informatica.exemplologin.model.Usuario;
 import br.senai.sp.informatica.exemplologin.service.LoginService;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 
@@ -15,8 +15,8 @@ public class LoginRepo {
     public static LoginRepo dao = new LoginRepo();
     private LoginService svc = RetrofitConfig.getInstance().getLoginService();
 
-    public void efetuaLogin(Usuario usuario, Callback<ResponseBody> callback) {
-        Call<ResponseBody> call = svc.efetuarLogin(usuario);
+    public void efetuaLogin(Usuario usuario, Callback<Autorizacao> callback) {
+        Call<Autorizacao> call = svc.efetuarLogin(usuario);
         call.enqueue(callback);
     }
 

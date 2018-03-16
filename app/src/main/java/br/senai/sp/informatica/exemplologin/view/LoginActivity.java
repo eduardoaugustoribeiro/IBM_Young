@@ -10,9 +10,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import br.senai.sp.informatica.exemplologin.R;
-import br.senai.sp.informatica.exemplologin.repository.LoginRepo;
+import br.senai.sp.informatica.exemplologin.model.Autorizacao;
 import br.senai.sp.informatica.exemplologin.model.Usuario;
-import okhttp3.ResponseBody;
+import br.senai.sp.informatica.exemplologin.repository.LoginRepo;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -46,18 +46,19 @@ public class LoginActivity extends AppCompatActivity {
         usuario.setLogin(login);
         usuario.setSenha(senha);
 
-        LoginRepo.dao.efetuaLogin(usuario, new Callback<ResponseBody>() {
+        LoginRepo.dao.efetuaLogin(usuario, new Callback<Autorizacao>() {
             @Override
-            public void onResponse(Call<ResponseBody> requisicao, Response<ResponseBody> resposta) {
+            public void onResponse(Call<Autorizacao> requisicao, Response<Autorizacao> resposta) {
                 if(resposta.isSuccessful()) {
 //                    LoginRepo.dao.salvarToken(resposta.headers().get("authorization"));
-                    Log.e("LoginActivity",  "Trx: " + resposta.headers().get("x-apiary-transaction-id"));
+                    LoginRepo.dao.salvarToken(resposta.body().getToken());
+                    Log.e("LoginActivity",  "Token: " + resposta.body().getToken());
                     abreTelaPrincipal();
                 }
             }
 
             @Override
-            public void onFailure(Call<ResponseBody> requisicao, Throwable erro) {
+            public void onFailure(Call<Autorizacao> requisicao, Throwable erro) {
                 Toast.makeText(LoginActivity.this, "Falha na Autenticação", Toast.LENGTH_LONG).show();
             }
         });
