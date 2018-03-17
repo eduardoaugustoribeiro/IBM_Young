@@ -34,21 +34,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <CheckBox
-        android:id="@+id/resp1Ingles1"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:background="#FF7500C8"
+        android:text="Ir"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resposta4Ingles1" />
+
+    <RadioButton
+        android:id="@+id/resposta1Ingles1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="(a)  Head"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/perguntaIngles1" />
 
-    <CheckBox
-        android:id="@+id/resp2Ingles1"
+    <RadioButton
+        android:id="@+id/resposta2Ingles1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -56,12 +70,12 @@
         android:layout_marginTop="8dp"
         android:text="(b)  Hand"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resp1Ingles1" />
+        app:layout_constraintTop_toBottomOf="@+id/resposta1Ingles1" />
 
-    <CheckBox
-        android:id="@+id/resp3Ingles1"
+    <RadioButton
+        android:id="@+id/resposta3Ingles1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -69,12 +83,12 @@
         android:layout_marginTop="8dp"
         android:text="(c)  Raid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resp2Ingles1" />
+        app:layout_constraintTop_toBottomOf="@+id/resposta2Ingles1" />
 
-    <CheckBox
-        android:id="@+id/resp4Ingles1"
+    <RadioButton
+        android:id="@+id/resposta4Ingles1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -82,21 +96,7 @@
         android:layout_marginTop="8dp"
         android:text="(d)  Foot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resp3Ingles1" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:background="#FF7500C8"
-        android:text="Ir"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resp4Ingles1" />
+        app:layout_constraintTop_toBottomOf="@+id/resposta3Ingles1" />
 </android.support.constraint.ConstraintLayout>
