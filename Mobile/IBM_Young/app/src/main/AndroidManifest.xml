@@ -24,16 +24,14 @@
 
         <activity
             android:name=".view.MainActivity"
-            android:label="@string/title_main" >
+            android:label="@string/title_main"/>
 
-        </activity>
+        <activity android:name=".view.TarefaActivity"/>
 
-        <activity
-            android:name=".view.TarefaActivity"
-            android:label="@string/title_activity_tarefa"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".view.PerfilActivity" />
 
-        </activity>
+        <activity android:name=".view.MissaoActivity" />
+
     </application>
 
 </manifest>
