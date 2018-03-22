@@ -9,7 +9,9 @@ namespace IBMYoung.Infrastructure.ViewModel
     {
         public string titulo { get; set; }
         public string conteudo { get; set; }
-        public Boolean entregavel { get; set; }
+        public bool entregavel { get; set; }
         public int nivel { get; set; }
+        public bool multiEscolha { get; set; }
+
     }
 }
