@@ -21,11 +21,11 @@ namespace IBMYoung.Controllers
         }
 
         [HttpPost]
-        public Aprendiz Post([FromBody] AprendizCadastroViewModel model)
+        public Aprendiz Post([FromBody] AprendizCadastroViewModel model/*arquivo??*/)
         {
 
             Aprendiz aprendiz = new Aprendiz();
-            aprendiz.nome = model.
+            //aprendiz.nome = model.
 
 
             _Db.aprendiz.Add(aprendiz);

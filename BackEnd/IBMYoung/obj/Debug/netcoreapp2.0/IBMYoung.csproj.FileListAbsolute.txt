@@ -10,3 +10,15 @@ C:\Users\CodeXP\source\repos\IBMYoung\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.
 C:\Users\CodeXP\source\repos\IBMYoung\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.pdb
 C:\Users\CodeXP\source\repos\IBMYoung\IBMYoung\bin\Debug\netcoreapp2.0\IBMYoung.xml
 C:\Users\CodeXP\source\repos\IBMYoung\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.csprojResolveAssemblyReference.cache
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\bin\Debug\netcoreapp2.0\IBMYoung.xml
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\bin\Debug\netcoreapp2.0\IBMYoung.deps.json
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\bin\Debug\netcoreapp2.0\IBMYoung.runtimeconfig.json
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\bin\Debug\netcoreapp2.0\IBMYoung.runtimeconfig.dev.json
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\bin\Debug\netcoreapp2.0\IBMYoung.dll
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\bin\Debug\netcoreapp2.0\IBMYoung.pdb
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.csprojResolveAssemblyReference.cache
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.csproj.CoreCompileInputs.cache
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.AssemblyInfoInputs.cache
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.AssemblyInfo.cs
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.dll
+C:\Users\CodeXP\Documents\ProjetoCodeXP\IBM_Young\BackEnd\IBMYoung\obj\Debug\netcoreapp2.0\IBMYoung.pdb

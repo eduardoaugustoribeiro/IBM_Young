@@ -11,12 +11,13 @@ namespace IBMYoung.Model
         public string titulo { get; set; }
         public DateTime dataCriacao { get; set; }
         public DateTime dataExclusao { get; set; }
-        public Boolean entregavel { get; set; }
+        public bool entregavel { get; set; }
         public int nivel { get; set; }
         public string conteudo { get; set; }
         public bool active { get; set; }
         public ICollection<Questao> questoes { get; set; }
-        public Usuario usuarioId { get; set; }
+        public Usuario usuario { get; set; }
+        public bool multEscolha { get; set; }
 
     }
 }

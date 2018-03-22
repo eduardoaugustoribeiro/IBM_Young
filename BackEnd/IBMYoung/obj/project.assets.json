@@ -13243,11 +13243,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CodeXP\\source\\repos\\IBMYoung\\IBMYoung\\IBMYoung.csproj",
+      "projectUniqueName": "C:\\Users\\CodeXP\\Documents\\ProjetoCodeXP\\IBM_Young\\BackEnd\\IBMYoung\\IBMYoung.csproj",
       "projectName": "IBMYoung",
-      "projectPath": "C:\\Users\\CodeXP\\source\\repos\\IBMYoung\\IBMYoung\\IBMYoung.csproj",
+      "projectPath": "C:\\Users\\CodeXP\\Documents\\ProjetoCodeXP\\IBM_Young\\BackEnd\\IBMYoung\\IBMYoung.csproj",
       "packagesPath": "C:\\Users\\CodeXP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CodeXP\\source\\repos\\IBMYoung\\IBMYoung\\obj\\",
+      "outputPath": "C:\\Users\\CodeXP\\Documents\\ProjetoCodeXP\\IBM_Young\\BackEnd\\IBMYoung\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
