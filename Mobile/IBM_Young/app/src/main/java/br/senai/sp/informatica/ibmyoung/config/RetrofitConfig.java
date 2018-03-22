@@ -1,6 +1,6 @@
-package br.senai.sp.informatica.exemplologin.config;
+package br.senai.sp.informatica.ibmyoung.config;
 
-import br.senai.sp.informatica.exemplologin.service.LoginService;
+import br.senai.sp.informatica.ibmyoung.service.LoginService;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 

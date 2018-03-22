@@ -1,13 +1,13 @@
-package br.senai.sp.informatica.exemplologin.repository;
+package br.senai.sp.informatica.ibmyoung.repository;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import br.senai.sp.informatica.exemplologin.Main;
-import br.senai.sp.informatica.exemplologin.config.RetrofitConfig;
-import br.senai.sp.informatica.exemplologin.model.Autorizacao;
-import br.senai.sp.informatica.exemplologin.model.Usuario;
-import br.senai.sp.informatica.exemplologin.service.LoginService;
+import br.senai.sp.informatica.ibmyoung.Main;
+import br.senai.sp.informatica.ibmyoung.config.RetrofitConfig;
+import br.senai.sp.informatica.ibmyoung.model.Autorizacao;
+import br.senai.sp.informatica.ibmyoung.model.Usuario;
+import br.senai.sp.informatica.ibmyoung.service.LoginService;
 import retrofit2.Call;
 import retrofit2.Callback;
 

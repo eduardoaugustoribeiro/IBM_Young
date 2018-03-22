@@ -1,4 +1,4 @@
-package br.senai.sp.informatica.exemplologin;
+package br.senai.sp.informatica.ibmyoung;
 
 import android.app.Application;
 import android.content.Context;

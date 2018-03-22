@@ -1,4 +1,4 @@
-package br.senai.sp.informatica.exemplologin.model;
+package br.senai.sp.informatica.ibmyoung.model;
 
 import java.util.Date;
 

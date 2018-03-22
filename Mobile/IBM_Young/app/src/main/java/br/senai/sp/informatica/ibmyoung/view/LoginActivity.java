@@ -1,4 +1,4 @@
-package br.senai.sp.informatica.exemplologin.view;
+package br.senai.sp.informatica.ibmyoung.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,10 +9,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import br.senai.sp.informatica.exemplologin.R;
-import br.senai.sp.informatica.exemplologin.model.Autorizacao;
-import br.senai.sp.informatica.exemplologin.model.Usuario;
-import br.senai.sp.informatica.exemplologin.repository.LoginRepo;
+import br.senai.sp.informatica.ibmyoung.R;
+import br.senai.sp.informatica.ibmyoung.model.Autorizacao;
+import br.senai.sp.informatica.ibmyoung.model.Usuario;
+import br.senai.sp.informatica.ibmyoung.repository.LoginRepo;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
