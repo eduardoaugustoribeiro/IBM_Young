@@ -24,4 +24,6 @@ public class RetrofitConfig {
     public LoginService getLoginService() {
         return this.retrofit.create(LoginService.class);
     }
+
+
 }

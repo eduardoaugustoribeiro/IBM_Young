@@ -1,6 +1,7 @@
 package br.senai.sp.informatica.ibmyoung.model;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by CodeXP on 20/03/2018.
@@ -9,11 +10,11 @@ import java.util.Date;
 public class Tarefa {
     private Integer id;
     private String titulo;
-    private int tipo;
     private Date dataCriacao;
-    private String status;
-    private String descricao;
+    private boolean entregavel;
     private int nivel;
+    private String conteudo;
+    private List<Questao> questoes;
 
     public Integer getId() {
         return id;
@@ -31,14 +32,6 @@ public class Tarefa {
         this.titulo = titulo;
     }
 
-    public int getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
-
     public Date getDataCriacao() {
         return dataCriacao;
     }
@@ -47,20 +40,12 @@ public class Tarefa {
         this.dataCriacao = dataCriacao;
     }
 
-    public String getStatus() {
-        return status;
+    public boolean isEntregavel() {
+        return entregavel;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setEntregavel(boolean entregavel) {
+        this.entregavel = entregavel;
     }
 
     public int getNivel() {
@@ -71,5 +56,19 @@ public class Tarefa {
         this.nivel = nivel;
     }
 
+    public String getConteudo() {
+        return conteudo;
+    }
 
+    public void setConteudo(String conteudo) {
+        this.conteudo = conteudo;
+    }
+
+    public List<Questao> getQuestoes() {
+        return questoes;
+    }
+
+    public void setQuestoes(List<Questao> questoes) {
+        this.questoes = questoes;
+    }
 }
