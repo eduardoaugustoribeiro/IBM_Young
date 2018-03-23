@@ -14,7 +14,6 @@ namespace IBMYoung.Model
         public string mesReferencia { get; set; }
         public string observacao { get; set; }
         public int anoReferencia { get; set; }
-        public int MyProperty { get; set; }
 
     }
 }

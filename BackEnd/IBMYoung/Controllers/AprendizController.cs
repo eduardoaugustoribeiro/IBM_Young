@@ -25,7 +25,10 @@ namespace IBMYoung.Controllers
         {
 
             Aprendiz aprendiz = new Aprendiz();
-            //aprendiz.nome = model.
+            aprendiz.nome = model.nome;
+            aprendiz.sobrenome = model.sobrenome;
+            aprendiz.instituicao = model.instituicao;
+            aprendiz.dataEntrada = model.dataEntrada;
 
 
             _Db.aprendiz.Add(aprendiz);

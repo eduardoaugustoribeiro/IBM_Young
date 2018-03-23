@@ -18,7 +18,7 @@ namespace IBMYoung.Model
         public string password { get; set; }
         public bool active { get; set; }
         public ICollection<Tarefa> tarefas { get; set; }
-        //tipo: aprendiz, gestor ou rh
+        //tipo: aprendiz,instituição, gestor ou rh
         public string tipo { get; set; }
 
     }

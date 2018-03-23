@@ -9,6 +9,7 @@ namespace IBMYoung.Model
     {
         public int ID { get; set; }
         public string nome { get; set; }
-        
+        public ICollection<Aprendiz> Aprendizes { get; set; }
+
     }
 }
