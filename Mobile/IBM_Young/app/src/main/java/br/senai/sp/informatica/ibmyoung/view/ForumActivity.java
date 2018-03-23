@@ -1,9 +1,9 @@
-package br.senai.sp.informatica.exemplologin.view;
+package br.senai.sp.informatica.ibmyoung.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import br.senai.sp.informatica.exemplologin.R;
+import br.senai.sp.informatica.ibmyoung.R;
 
 /**
  * Created by CodeXP on 19/03/2018.
