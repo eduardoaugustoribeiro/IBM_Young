@@ -35,7 +35,7 @@ namespace IBMYoung.Controllers
         [HttpGet]
         public List<Boletim> Get()
         {
-            return _Db.boletim.ToList();
+            return _Db.Boletins.ToList();
         }
 
     }

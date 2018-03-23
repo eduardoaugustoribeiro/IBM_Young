@@ -36,7 +36,7 @@ namespace IBMYoung.Controllers
         [HttpGet]
         public List<Funcionario> Get()
         {
-            return _Db.funcionario.ToList();
+            return _Db.Funcionarios.ToList();
         }
     }
 }

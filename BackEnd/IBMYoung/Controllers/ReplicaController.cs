@@ -34,7 +34,7 @@ namespace IBMYoung.Controllers
         [HttpGet]
         public List<Replica> Get()
         {
-            return _Db.replica.ToList();
+            return _Db.Replicas.ToList();
         }
     }
 }

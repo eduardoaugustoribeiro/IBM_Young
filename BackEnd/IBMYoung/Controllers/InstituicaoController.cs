@@ -35,7 +35,7 @@ namespace IBMYoung.Controllers
         [HttpGet]
         public List<Instituicao> Get()
         {
-            return _Db.instituicao.ToList();
+            return _Db.Instituicoes.ToList();
         }
     }
 }

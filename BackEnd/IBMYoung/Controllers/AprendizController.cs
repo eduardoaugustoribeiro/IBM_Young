@@ -31,7 +31,7 @@ namespace IBMYoung.Controllers
             aprendiz.dataEntrada = model.dataEntrada;
 
 
-            _Db.aprendiz.Add(aprendiz);
+            _Db.Aprendizes.Add(aprendiz);
             _Db.SaveChanges();
 
             return aprendiz;
@@ -40,7 +40,7 @@ namespace IBMYoung.Controllers
         [HttpGet]
         public List<Aprendiz> Get()
         {
-            return _Db.aprendiz.ToList();
+            return _Db.Aprendizes.ToList();
         }
 
     }

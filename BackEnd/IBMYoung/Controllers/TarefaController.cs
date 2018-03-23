@@ -41,7 +41,7 @@ namespace IBMYoung.Controllers
         [HttpGet]
         public List<Tarefa> Get()
         {
-            return _Db.tarefa.ToList();
+            return _Db.Tarefas.ToList();
         }
 
     }

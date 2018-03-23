@@ -90,7 +90,7 @@ namespace IBMYoung.Controllers
         public List<Usuario> Get()
         {
  
-            return _Db.usuario.ToList();
+            return _Db.Usuarios.ToList();
         }
     }
 }
