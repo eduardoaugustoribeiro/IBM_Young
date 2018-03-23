@@ -22,27 +22,54 @@ namespace IBMYoung.Migrations
 
             modelBuilder.Entity("IBMYoung.Model.Alternativa", b =>
                 {
-                    b.Property<int>("ID");
-
-                    b.Property<string>("alternativaA");
-
-                    b.Property<string>("alternativaB");
-
-                    b.Property<string>("alternativaC");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("alternativaCorreta");
 
-                    b.Property<string>("alternativaD");
+                    b.Property<int?>("questaoIdID");
 
                     b.HasKey("ID");
 
+                    b.HasIndex("questaoIdID");
+
                     b.ToTable("alternativa");
+                });
+
+            modelBuilder.Entity("IBMYoung.Model.Aprendiz", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("dataEntrada");
+
+                    b.Property<DateTime>("dataSaida");
+
+                    b.Property<int?>("instituicaoID");
+
+                    b.Property<int>("nivel");
+
+                    b.Property<string>("nome");
+
+                    b.Property<string>("sobrenome");
+
+                    b.Property<int?>("usuarioId");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("instituicaoID");
+
+                    b.HasIndex("usuarioId");
+
+                    b.ToTable("aprendiz");
                 });
 
             modelBuilder.Entity("IBMYoung.Model.Boletim", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<int?>("AprendizID");
 
                     b.Property<int>("anoReferencia");
 
@@ -57,6 +84,8 @@ namespace IBMYoung.Migrations
                     b.Property<string>("observacao");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("AprendizID");
 
                     b.ToTable("boletim");
                 });
@@ -140,15 +169,17 @@ namespace IBMYoung.Migrations
 
                     b.Property<bool>("entregavel");
 
+                    b.Property<bool>("multEscolha");
+
                     b.Property<int>("nivel");
 
                     b.Property<string>("titulo");
 
-                    b.Property<int?>("usuarioIdId");
+                    b.Property<int?>("usuarioId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("usuarioIdId");
+                    b.HasIndex("usuarioId");
 
                     b.ToTable("tarefa");
                 });
@@ -176,9 +207,13 @@ namespace IBMYoung.Migrations
 
                     b.Property<bool>("active");
 
-                    b.Property<string>("password");
+                    b.Property<string>("password")
+                        .IsRequired();
 
-                    b.Property<string>("username");
+                    b.Property<string>("tipo");
+
+                    b.Property<string>("username")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
@@ -188,9 +223,26 @@ namespace IBMYoung.Migrations
             modelBuilder.Entity("IBMYoung.Model.Alternativa", b =>
                 {
                     b.HasOne("IBMYoung.Model.Questao", "questaoId")
-                        .WithOne("alternativaId")
-                        .HasForeignKey("IBMYoung.Model.Alternativa", "ID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany("alternativaId")
+                        .HasForeignKey("questaoIdID");
+                });
+
+            modelBuilder.Entity("IBMYoung.Model.Aprendiz", b =>
+                {
+                    b.HasOne("IBMYoung.Model.Instituicao", "instituicao")
+                        .WithMany("Aprendizes")
+                        .HasForeignKey("instituicaoID");
+
+                    b.HasOne("IBMYoung.Model.Usuario", "usuario")
+                        .WithMany()
+                        .HasForeignKey("usuarioId");
+                });
+
+            modelBuilder.Entity("IBMYoung.Model.Boletim", b =>
+                {
+                    b.HasOne("IBMYoung.Model.Aprendiz")
+                        .WithMany("boletins")
+                        .HasForeignKey("AprendizID");
                 });
 
             modelBuilder.Entity("IBMYoung.Model.Funcionario", b =>
@@ -216,9 +268,9 @@ namespace IBMYoung.Migrations
 
             modelBuilder.Entity("IBMYoung.Model.Tarefa", b =>
                 {
-                    b.HasOne("IBMYoung.Model.Usuario", "usuarioId")
-                        .WithMany()
-                        .HasForeignKey("usuarioIdId");
+                    b.HasOne("IBMYoung.Model.Usuario", "usuario")
+                        .WithMany("tarefas")
+                        .HasForeignKey("usuarioId");
                 });
 #pragma warning restore 612, 618
         }

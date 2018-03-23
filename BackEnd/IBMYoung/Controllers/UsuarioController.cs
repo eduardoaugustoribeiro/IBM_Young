@@ -59,7 +59,7 @@ namespace IBMYoung.Controllers
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: creds);
 
-                //HttpContext.Response request = HttpContext.Response.Headers.Add();
+                HttpContext.Response.Headers.Add("token", token.ToString());
 
                 return Ok(new
                 {
