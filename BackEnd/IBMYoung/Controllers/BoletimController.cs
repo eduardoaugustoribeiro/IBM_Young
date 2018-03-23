@@ -26,7 +26,7 @@ namespace IBMYoung.Controllers
             boletim.mesReferencia = model.mesReferencia;
             boletim.anoReferencia = model.anoReferencia;
 
-            _Db.boletim.Add(boletim);
+            _Db.Boletins.Add(boletim);
             _Db.SaveChanges();
 
             return boletim;

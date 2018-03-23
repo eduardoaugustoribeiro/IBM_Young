@@ -28,7 +28,7 @@ namespace IBMYoung.Controllers
             questao.titulo = model.titulo;
             questao.conteudo = model.conteudo;
 
-            _Db.questao.Add(questao);
+            _Db.Questoes.Add(questao);
             _Db.SaveChanges();
 
             return questao;

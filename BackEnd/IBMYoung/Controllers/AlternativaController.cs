@@ -26,9 +26,10 @@ namespace IBMYoung.Controllers
         {
             Alternativa alternativa = new Alternativa();
 
-            alternativa.alternativaCorreta = model.alternativaCorreta;
+            alternativa.textoAlternativa = model.alternativaTexto;
+            alternativa.correta = model.correta;
 
-            _Db.alternativa.Add(alternativa);
+            _Db.Alternativas.Add(alternativa);
             _Db.SaveChanges();
 
             return alternativa;
@@ -36,7 +37,7 @@ namespace IBMYoung.Controllers
         [HttpGet]
         public List<Alternativa> Get()
         {
-            return _Db.alternativa.ToList();
+            return _Db.Alternativas.ToList();
         }
     }
 }

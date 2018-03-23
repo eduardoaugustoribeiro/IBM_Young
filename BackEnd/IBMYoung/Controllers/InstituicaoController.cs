@@ -26,7 +26,7 @@ namespace IBMYoung.Controllers
             Instituicao instituicao = new Instituicao();
             instituicao.nome = model.nome;
 
-            _Db.instituicao.Add(instituicao);
+            _Db.Instituicoes.Add(instituicao);
             _Db.SaveChanges();
 
             return instituicao;

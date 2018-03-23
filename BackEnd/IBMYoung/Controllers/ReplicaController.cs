@@ -27,7 +27,7 @@ namespace IBMYoung.Controllers
 
             return replica;
 
-            _Db.replica.Add(replica);
+            _Db.Replicas.Add(replica);
             _Db.SaveChanges();
         }
 

@@ -27,7 +27,7 @@ namespace IBMYoung.Controllers
             Funcionario funcionario = new Funcionario();
             
 
-            _Db.funcionario.Add(funcionario);
+            _Db.Funcionarios.Add(funcionario);
             _Db.SaveChanges();
 
             return funcionario;

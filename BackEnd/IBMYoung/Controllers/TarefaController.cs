@@ -32,7 +32,7 @@ namespace IBMYoung.Controllers
             tarefa.dataCriacao = DateTime.Now;
             tarefa.active = true;
 
-            _Db.tarefa.Add(tarefa);
+            _Db.Tarefas.Add(tarefa);
             _Db.SaveChanges();
 
             return tarefa;

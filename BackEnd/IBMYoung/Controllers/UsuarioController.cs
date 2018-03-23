@@ -40,7 +40,7 @@ namespace IBMYoung.Controllers
         {
             //if (request.Username == "teste" && request.Password == "teste")
 
-            Usuario objeto = _Db.usuario.Where(x => x.username == request.Username && x.password == request.Password).FirstOrDefault();
+            Usuario objeto = _Db.Usuarios.Where(x => x.username == request.Username && x.password == request.Password).FirstOrDefault();
 
             if (objeto != null)
             {
@@ -79,7 +79,7 @@ namespace IBMYoung.Controllers
             usuario.password = model.password;
             usuario.username = model.username;
 
-            _Db.usuario.Add(usuario);
+            _Db.Usuarios.Add(usuario);
             _Db.SaveChanges();
 
             return usuario;

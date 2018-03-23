@@ -28,7 +28,7 @@ namespace IBMYoung.Controllers
             model.texto = topico.texto;
             topico.dataCriacao = DateTime.Now;
 
-            _Db.topico.Add(topico);
+            _Db.Topicos.Add(topico);
             _Db.SaveChanges();
 
             return topico;
