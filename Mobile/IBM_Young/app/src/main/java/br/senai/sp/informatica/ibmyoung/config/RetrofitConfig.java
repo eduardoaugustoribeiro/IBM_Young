@@ -1,6 +1,7 @@
 package br.senai.sp.informatica.ibmyoung.config;
 
 import br.senai.sp.informatica.ibmyoung.service.LoginService;
+import br.senai.sp.informatica.ibmyoung.service.TarefaService;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
@@ -25,5 +26,8 @@ public class RetrofitConfig {
         return this.retrofit.create(LoginService.class);
     }
 
+    public TarefaService getTarefaService() {
+        return this.retrofit.create(TarefaService.class);
+    }
 
 }

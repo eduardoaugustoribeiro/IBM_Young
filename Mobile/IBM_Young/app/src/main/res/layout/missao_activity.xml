@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.TarefaActivity">
+    tools:context=".view.MissaoActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -54,12 +54,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
     <Button
+        android:id="@+id/btEntregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
         android:background="@color/colorAccent"
+        android:onClick="entregarMissao"
         android:text="Entregar"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"

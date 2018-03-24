@@ -3,7 +3,7 @@ package br.senai.sp.informatica.ibmyoung.model;
 
 public class Alternativa {
     private Integer Id;
-    private String alternativaCorreta;
+    private String textoAlternativa;
     private Questao questao;
 
     public Integer getId() {
@@ -14,12 +14,12 @@ public class Alternativa {
         Id = id;
     }
 
-    public String getAlternativaCorreta() {
-        return alternativaCorreta;
+    public String getTextoAlternativa() {
+        return textoAlternativa;
     }
 
-    public void setAlternativaCorreta(String alternativaCorreta) {
-        this.alternativaCorreta = alternativaCorreta;
+    public void setTextoAlternativa(String textoAlternativa) {
+        this.textoAlternativa = textoAlternativa;
     }
 
     public Questao getQuestao() {
